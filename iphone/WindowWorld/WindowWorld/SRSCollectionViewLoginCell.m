@@ -7,16 +7,43 @@
 //
 
 #import "SRSCollectionViewLoginCell.h"
+@interface SRSCollectionViewLoginCell()
+
+@property (nonatomic) BOOL isLoginMode;
+@end
 
 @implementation SRSCollectionViewLoginCell
+- (void)awakeFromNib {
+    self.emailField.hidden = YES;
+    [self.okButton setTitle:@"Login" forState:UIControlStateNormal];
+    self.isLoginMode = YES;
+}
 
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
+
     }
     return self;
+}
+
+- (IBAction)switchLoginCreateButtonTapped:(id)sender {
+    self.isLoginMode = !self.isLoginMode;
+    if (self.isLoginMode) {
+        self.emailField.hidden = YES;
+        self.switchLoginCreateButton.titleLabel.text = @"Create Account";
+        [self.okButton setTitle:@"Login" forState:UIControlStateNormal];
+        [self.switchLoginCreateButton setTitle:@"Create Account" forState:UIControlStateNormal];
+        //[self.okButton sizeToFit];
+    } else {
+        self.emailField.hidden = NO;
+        self.switchLoginCreateButton.titleLabel.text = @"Use Existing";
+        [self.okButton setTitle:@"Sign Up" forState:UIControlStateNormal];
+        [self.switchLoginCreateButton setTitle:@"Use Existing" forState:UIControlStateNormal];
+        //[self.okButton sizeToFit];
+    }
 }
 
 /*

@@ -22,6 +22,7 @@
 		1760208519D2EA1400093F06 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1760206419D2EA1400093F06 /* UIKit.framework */; };
 		1760208D19D2EA1400093F06 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1760208B19D2EA1400093F06 /* InfoPlist.strings */; };
 		1760208F19D2EA1400093F06 /* WindowWorldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1760208E19D2EA1400093F06 /* WindowWorldTests.m */; };
+		1760209D19D2F17F00093F06 /* SRSCollectionViewLoginCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1760209C19D2F17F00093F06 /* SRSCollectionViewLoginCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		1760208A19D2EA1400093F06 /* WindowWorldTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WindowWorldTests-Info.plist"; sourceTree = "<group>"; };
 		1760208C19D2EA1400093F06 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1760208E19D2EA1400093F06 /* WindowWorldTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WindowWorldTests.m; sourceTree = "<group>"; };
+		1760209B19D2F17F00093F06 /* SRSCollectionViewLoginCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRSCollectionViewLoginCell.h; sourceTree = "<group>"; };
+		1760209C19D2F17F00093F06 /* SRSCollectionViewLoginCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRSCollectionViewLoginCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +123,8 @@
 				1760207519D2EA1400093F06 /* Main_iPad.storyboard */,
 				1760207819D2EA1400093F06 /* SRSViewController.h */,
 				1760207919D2EA1400093F06 /* SRSViewController.m */,
+				1760209B19D2F17F00093F06 /* SRSCollectionViewLoginCell.h */,
+				1760209C19D2F17F00093F06 /* SRSCollectionViewLoginCell.m */,
 				1760207B19D2EA1400093F06 /* Images.xcassets */,
 				1760206719D2EA1400093F06 /* Supporting Files */,
 			);
@@ -257,6 +262,7 @@
 				1760206D19D2EA1400093F06 /* main.m in Sources */,
 				1760207119D2EA1400093F06 /* SRSAppDelegate.m in Sources */,
 				1760207A19D2EA1400093F06 /* SRSViewController.m in Sources */,
+				1760209D19D2F17F00093F06 /* SRSCollectionViewLoginCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
