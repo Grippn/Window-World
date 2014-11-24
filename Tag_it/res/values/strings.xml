@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Tag It</string>
+    <string name="title_section1">Map View</string>
+    <string name="title_section2">Tags In Range</string>
+    <string name="title_section3">Account Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+</resources>
