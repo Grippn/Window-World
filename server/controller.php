@@ -15,7 +15,7 @@ if ($operation == "login") {
     $password = htmlspecialchars($_GET["password"]);
     $user_id = login($username, $password);
     if (!$user_id) {
-        print_error("Login failed. Authentication provuser_ided is incorrect.");
+        print_error("Login failed. Authentication provided user_id is incorrect.");
     }
     $_SESSION["user_id"] = $user_id;
     echo json_encode(array("error"=>false, "operation"=>"login", "user_id"=>$user_id));
@@ -37,6 +37,7 @@ if ($operation == "create_user") {
         print_error("Account created but login failed.");
     }
     $_SESSION["user_id"] = $user_id;
+    echo json_encode(array("error"=>false, "operation"=>"create_user"));
     return;
 }
 if (!isset($_SESSION["user_id"])) {

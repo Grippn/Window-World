@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>2E68D3E5-8C91-4104-9F1A-3FDB928AE172</string>
+	<key>IDESourceControlProjectName</key>
+	<string>WindowWorld</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>8C5BF632E24EDB3283CF1FDF0F6F77846EEEB270</key>
+		<string>github.com:Grippn/Window-World.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>iphone/WindowWorld/WindowWorld.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>8C5BF632E24EDB3283CF1FDF0F6F77846EEEB270</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:Grippn/Window-World.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>8C5BF632E24EDB3283CF1FDF0F6F77846EEEB270</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>8C5BF632E24EDB3283CF1FDF0F6F77846EEEB270</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Window-World</string>
+		</dict>
+	</array>
+</dict>
+</plist>
