@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SRSDatabaseService.h"
 
 @interface SRSViewController : UIViewController
+
+@property (strong, nonatomic) SRSDatabaseService *databaseService;
+
+- (void)loginSucceeded;
 
 @end

@@ -9,7 +9,7 @@
 #import "SRSViewController.h"
 #import "SRSCollectionViewLoginCell.h"
 
-@interface SRSViewController () <UITextFieldDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
+@interface SRSViewController () <UITextFieldDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, DatabaseServiceProtocol>
 @property (nonatomic, weak) IBOutlet UIToolbar *toolbar;
 @property (nonatomic, weak) IBOutlet UIBarButtonItem *shareButton;
 @property (nonatomic, weak) IBOutlet UITextField *textField;
@@ -53,6 +53,18 @@
 
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section {
     return UIEdgeInsetsMake(10, 10, 10, 10);
+}
+- (IBAction)loginSignUpPressed:(id)sender {
+    SRSCollectionViewLoginCell *loginCell = (SRSCollectionViewLoginCell *)[self.collectionView cellForItemAtIndexPath:[NSIndexPath indexPathForItem:0 inSection:0]];
+    if (loginCell.isLoginMode) {
+        self.databaseService.delegate = self;
+        [self.databaseService login:loginCell.usernameField.text password:loginCell.passwordField.text];
+    }
+}
+
+- (void)loginSucceeded {
+    self.databaseService.isLoggedIn = YES;
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

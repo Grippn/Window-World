@@ -14,6 +14,7 @@
 @property (nonatomic, strong) IBOutlet UITextField *emailField;
 @property (nonatomic, strong) IBOutlet UIButton *okButton;
 @property (nonatomic, strong) IBOutlet UIButton *switchLoginCreateButton;
+@property (nonatomic) BOOL isLoginMode;
 
 - (IBAction)switchLoginCreateButtonTapped:(id)sender;
 @end

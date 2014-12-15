@@ -9,7 +9,7 @@
 #import "SRSCollectionViewLoginCell.h"
 @interface SRSCollectionViewLoginCell()
 
-@property (nonatomic) BOOL isLoginMode;
+
 @end
 
 @implementation SRSCollectionViewLoginCell
@@ -27,6 +27,13 @@
 
     }
     return self;
+}
+- (IBAction)loginSignUpClicked:(id)sender {
+    if (self.isLoginMode) {
+        
+    } else {
+        
+    }
 }
 
 - (IBAction)switchLoginCreateButtonTapped:(id)sender {

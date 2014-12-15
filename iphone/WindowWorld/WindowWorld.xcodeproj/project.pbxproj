@@ -23,6 +23,9 @@
 		1760208D19D2EA1400093F06 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1760208B19D2EA1400093F06 /* InfoPlist.strings */; };
 		1760208F19D2EA1400093F06 /* WindowWorldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1760208E19D2EA1400093F06 /* WindowWorldTests.m */; };
 		1760209D19D2F17F00093F06 /* SRSCollectionViewLoginCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1760209C19D2F17F00093F06 /* SRSCollectionViewLoginCell.m */; };
+		17C5E9631A3E52AD00A558C1 /* SRSAJAXService.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C5E9621A3E52AD00A558C1 /* SRSAJAXService.m */; };
+		17C5E9661A3E52FB00A558C1 /* SRSDatabaseService.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C5E9651A3E52FB00A558C1 /* SRSDatabaseService.m */; };
+		17C5E96B1A3E63AB00A558C1 /* SRSMainCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C5E96A1A3E63AB00A558C1 /* SRSMainCollectionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +61,13 @@
 		1760208E19D2EA1400093F06 /* WindowWorldTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WindowWorldTests.m; sourceTree = "<group>"; };
 		1760209B19D2F17F00093F06 /* SRSCollectionViewLoginCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRSCollectionViewLoginCell.h; sourceTree = "<group>"; };
 		1760209C19D2F17F00093F06 /* SRSCollectionViewLoginCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRSCollectionViewLoginCell.m; sourceTree = "<group>"; };
+		17739A2E1A3E69B700537189 /* SRSProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRSProtocols.h; sourceTree = "<group>"; };
+		17C5E9611A3E52AD00A558C1 /* SRSAJAXService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRSAJAXService.h; sourceTree = "<group>"; };
+		17C5E9621A3E52AD00A558C1 /* SRSAJAXService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRSAJAXService.m; sourceTree = "<group>"; };
+		17C5E9641A3E52FB00A558C1 /* SRSDatabaseService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRSDatabaseService.h; sourceTree = "<group>"; };
+		17C5E9651A3E52FB00A558C1 /* SRSDatabaseService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRSDatabaseService.m; sourceTree = "<group>"; };
+		17C5E9691A3E63AB00A558C1 /* SRSMainCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRSMainCollectionViewController.h; sourceTree = "<group>"; };
+		17C5E96A1A3E63AB00A558C1 /* SRSMainCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRSMainCollectionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,11 +130,9 @@
 				1760206F19D2EA1400093F06 /* SRSAppDelegate.h */,
 				1760207019D2EA1400093F06 /* SRSAppDelegate.m */,
 				1760207219D2EA1400093F06 /* Main_iPhone.storyboard */,
+				17C5E9671A3E530C00A558C1 /* Model */,
 				1760207519D2EA1400093F06 /* Main_iPad.storyboard */,
-				1760207819D2EA1400093F06 /* SRSViewController.h */,
-				1760207919D2EA1400093F06 /* SRSViewController.m */,
-				1760209B19D2F17F00093F06 /* SRSCollectionViewLoginCell.h */,
-				1760209C19D2F17F00093F06 /* SRSCollectionViewLoginCell.m */,
+				17C5E96D1A3E63C100A558C1 /* View */,
 				1760207B19D2EA1400093F06 /* Images.xcassets */,
 				1760206719D2EA1400093F06 /* Supporting Files */,
 			);
@@ -158,6 +166,47 @@
 				1760208B19D2EA1400093F06 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		17C5E9671A3E530C00A558C1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				17C5E9611A3E52AD00A558C1 /* SRSAJAXService.h */,
+				17C5E9621A3E52AD00A558C1 /* SRSAJAXService.m */,
+				17C5E9641A3E52FB00A558C1 /* SRSDatabaseService.h */,
+				17C5E9651A3E52FB00A558C1 /* SRSDatabaseService.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		17C5E9681A3E638800A558C1 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				1760207819D2EA1400093F06 /* SRSViewController.h */,
+				1760207919D2EA1400093F06 /* SRSViewController.m */,
+				1760209B19D2F17F00093F06 /* SRSCollectionViewLoginCell.h */,
+				1760209C19D2F17F00093F06 /* SRSCollectionViewLoginCell.m */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		17C5E96C1A3E63B300A558C1 /* MainMenu */ = {
+			isa = PBXGroup;
+			children = (
+				17C5E9691A3E63AB00A558C1 /* SRSMainCollectionViewController.h */,
+				17C5E96A1A3E63AB00A558C1 /* SRSMainCollectionViewController.m */,
+			);
+			name = MainMenu;
+			sourceTree = "<group>";
+		};
+		17C5E96D1A3E63C100A558C1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				17739A2E1A3E69B700537189 /* SRSProtocols.h */,
+				17C5E96C1A3E63B300A558C1 /* MainMenu */,
+				17C5E9681A3E638800A558C1 /* Login */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,7 +310,10 @@
 			files = (
 				1760206D19D2EA1400093F06 /* main.m in Sources */,
 				1760207119D2EA1400093F06 /* SRSAppDelegate.m in Sources */,
+				17C5E96B1A3E63AB00A558C1 /* SRSMainCollectionViewController.m in Sources */,
 				1760207A19D2EA1400093F06 /* SRSViewController.m in Sources */,
+				17C5E9661A3E52FB00A558C1 /* SRSDatabaseService.m in Sources */,
+				17C5E9631A3E52AD00A558C1 /* SRSAJAXService.m in Sources */,
 				1760209D19D2F17F00093F06 /* SRSCollectionViewLoginCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -477,6 +529,7 @@
 				1760209419D2EA1400093F06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1760209519D2EA1400093F06 /* Build configuration list for PBXNativeTarget "WindowWorldTests" */ = {
 			isa = XCConfigurationList;
@@ -485,6 +538,7 @@
 				1760209719D2EA1400093F06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
